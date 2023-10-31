@@ -57,7 +57,7 @@ public class StudentDao {
 	public static Student getStudentById(int id) {
         Student student = null;
         try {
-        	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=satya@2000rb");
+        	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=root");
         		
             String sql = "SELECT * FROM student_att WHERE id=?";
             PreparedStatement ps = con.prepareStatement(sql);
