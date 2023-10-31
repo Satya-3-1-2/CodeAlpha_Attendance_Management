@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<main class="container">
+			<h1>ENTER STUDENT DATA</h1>
+			<form class="form" action="savestudent" method="post">
+				<span>ID:</span> <input type="text" name="id" placeholder="ENTER ID"><br> <span>NAME:</span>
+				<input type="text" name="name" placeholder="ENTER NAME"><br> <span>AGE:</span><input
+					type="text" name="age" placeholder="ENTER AGE"><br> <span>GENDER:</span><input
+					type="radio" name="gender" value="male">male <input
+					type="radio" name="gender" value="female">female<input
+					type="radio" name="gender" value="others">others<br>
+					<span>STATUS:</span><input type="radio" name="status" value="present">present
+					<input type="radio" name="status" value="absent">absent<br><br>
+
+
+				<button class="btn" type="submit" value="save"
+					style="background-color: violet">save</button>
+				<br>
+			</form>
+		</main>
+	</div>
+</body>
+</html>
