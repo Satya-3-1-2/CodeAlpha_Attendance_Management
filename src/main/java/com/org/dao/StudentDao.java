@@ -13,7 +13,7 @@ public class StudentDao {
 	public static int SaveStudent(int id, String name, int age, String gender,String status) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=satya@2000rb");
+			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=root");
 			String sql= "INSERT INTO student_att VALUES(?,?,?,?,?)";
 			PreparedStatement ps= con.prepareStatement(sql);
 			ps.setInt(1,id);

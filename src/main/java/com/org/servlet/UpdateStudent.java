@@ -23,7 +23,7 @@ public class UpdateStudent extends HttpServlet{
 		String id=req.getParameter("id");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=satya@2000rb");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=root");
 			String sql="SELECT * FROM student_att where id="+id;
 			Statement st=con.createStatement();
 			ResultSet rs=st.executeQuery(sql);

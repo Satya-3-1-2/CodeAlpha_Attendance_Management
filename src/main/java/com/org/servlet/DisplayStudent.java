@@ -19,7 +19,7 @@ public class DisplayStudent extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=satya@2000rb");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=root");
 			String sql="SELECT * FROM student_att ";
 			Statement st=con.createStatement();
 			ResultSet rs=st.executeQuery(sql);
