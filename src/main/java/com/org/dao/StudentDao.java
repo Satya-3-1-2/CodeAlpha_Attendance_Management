@@ -35,7 +35,7 @@ public class StudentDao {
 	public static int updateStudent(int id, String name, int age, String gender, String status) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=satya@2000rb");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_management?user=root&password=root");
             String sql = "UPDATE student_att SET name=?, age=?, gender=?, status=? WHERE id=?";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, name);
